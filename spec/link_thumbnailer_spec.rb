@@ -2,9 +2,9 @@ require 'spec_helper'
 
 describe LinkThumbnailer do
 
-  let(:og_example)    { File.open(File.dirname(__FILE__) + '/examples/og_example.html').read() }
-  let(:example)       { File.open(File.dirname(__FILE__) + '/examples/example.html').read() }
-  let(:empty_example) { File.open(File.dirname(__FILE__) + '/examples/empty_example.html').read() }
+  let(:og_example)          { File.open(File.dirname(__FILE__) + '/examples/og_example.html').read() }
+  let(:example)             { File.open(File.dirname(__FILE__) + '/examples/example.html').read() }
+  let(:empty_example)       { File.open(File.dirname(__FILE__) + '/examples/empty_example.html').read() }
   let(:og_example_multiple) { File.open(File.dirname(__FILE__) + '/examples/og_example_multiple.html').read() }
 
   it { should respond_to :configuration }
